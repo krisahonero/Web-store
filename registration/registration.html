@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="home"><button><a href="index.html">Home</a></button></div>
+    <div class="registro activo" id="registro">
+        <div class="main" id="formulario">
+            <div class="title-SU">Sign up</div>
+            <form action="" class="formulario" id="formulario" class="signup">
+                    <input type="text" name="name" id="name" required placeholder="Nombre" />
+                    <input type="email" name="email" id="email" required placeholder="Email"/>
+                    <label for="start" >Birthday:</label>
+                    <input type="date" id="start" name="start" value="2000-01-01" min="1900-01-01" max="2018-12-31" required/>
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+            </form>
+            <div class="links">
+                <label for=""> Already registered? <a href="login.html"> Login</a></label>
+            </div> 
+            <div class="form-example">
+              <button class="register" type="submit" value="Register">Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="header exito" id="exito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        <h1>Registrado con éxito!</h1>
+        <p>Le llegará un mail para verificar su cuenta.</p>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
